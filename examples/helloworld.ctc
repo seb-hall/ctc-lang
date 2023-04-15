@@ -1,0 +1,17 @@
+//	helloworld.ctc, written by sebhall on 15/04/2023
+
+//	here's a comment!
+
+//	include corelib library
+#include <corelib>
+
+//	define main function
+int main() {
+
+	//	print hello world! message to console
+	print("hello world!");
+	
+	//	return exit success
+	return 0;
+	
+}

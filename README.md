@@ -4,5 +4,5 @@
 ctc is designed with the following:
  -  C++ class and function interoperability
  -  sandboxed runtime
- -  very simple (and small!) compiler
+ -  very simple (and small!) interpreter
  -  cross-platform support

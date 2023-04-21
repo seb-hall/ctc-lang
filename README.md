@@ -1,8 +1,9 @@
 # ctc-lang
-'c etc', an object-oriented, interpreted programming language.
+'c etc', a C++ source-code compatible interpreted programming language
 
 ctc is designed with the following:
  -  C++ class and function interoperability
  -  sandboxed runtime
- -  very simple (and small!) interpreter
+ -  fast compiler
+ -  small runtime
  -  cross-platform support

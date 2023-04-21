@@ -1,0 +1,11 @@
+
+compiler token
+#include <stdio.h>
+
+type name ob type name c type ptr name osb csb cb ob 
+int main(int argc, char* argv[]) {
+
+    
+    printf("hello world!\n");
+    return 0;
+}

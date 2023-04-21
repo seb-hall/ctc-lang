@@ -1,3 +1,8 @@
+//  tokeniser.h     written by sebhall in April 2023
+//
+//  this file contains functions and types for tokenising
+//  CTC code. This means simply generating a list of tokens
+//  that can be interpreted by the structuriser.
 
 #include <string>
 #include <vector>

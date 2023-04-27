@@ -1,61 +1,29 @@
 #include <stdint.h>
-#include <unordered_map>
-#include <unordered_set>
 
-typedef void*               id;
+#include <string>
+#include <vector>
+#include <map>
 
-typedef char                u8;
+typedef short int           id;
 
-typedef short int           i16;
-typedef short unsigned int  u16;
-typedef int                 i32;
-typedef long int            i64;
-typedef unsigned int        u32;
-typedef unsigned long int   u64;
+typedef int                 I4;
+typedef long int            I8;
+typedef unsigned int        U4;
+typedef unsigned long int   U8;
 
-typedef float               f32;
-typedef double              f64;
+typedef float               F4;
+typedef double              F8;
 
-enum floatType {
-    FLOAT32,
-    FLOAT64
-};
+typedef bool                Bool;
+typedef std::vector<char>   String;
 
-enum integerType {
-    INT8,
-    UINT8,
-    INT16,
-    UINT16,
-    INT32,
-    UINT32,
-    INT64,
-    UINT64
-};
+std::map<id, I4> integerStore;
+std::map<id, U4> unsignedStore;
+std::map<id, I8> longIntegerStore;
+std::map<id, U8> longUnsignedStore;
 
+std::map<id, F4> floatStore;
+std::map<id, F8> doubleStore;
 
-std::unordered_map<id, integerType> integerValues;
-std::unordered_map<id, floatType> floatValues;
-std::unordered_set<id> boolValues;
-std::unordered_set<id> stringValues;
-
-id storeI32(i32 variable);  //  stores new i32 and returns address
-
-i32 fetchI32(id address);   //  gets i32 from address - is this necessary
-
-void freeInt(id address);   //  frees memory at given location, removing from maps and sets
-
-
-
-i16 fetchI16(id address);
-u16 fetchU16(id address);
-
-
-u32 fetchU32(id address);
-
-i64 fetchI64(id address);
-u64 fetchU64(id address);
-
-
-
-
-
+std::map<id, Bool> boolStore;
+std::map<id, String> stringStore;
